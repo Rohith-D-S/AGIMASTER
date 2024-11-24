@@ -1,0 +1,258 @@
+/* Importing Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif; /* Clean, easy-to-read font for the body */
+  background-color: #f4f4f4; /* Soft light background color */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(135deg, #008C76, #00bfae); /* Gradient background */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added subtle shadow */
+}
+
+/* Logo Styling (Special Look for Agimaster) */
+header .logo {
+  font-family: 'Cinzel', serif; /* Elegant, classy serif font */
+  font-size: 56px; /* Large but not overwhelming */
+  font-weight: 700; /* Bold, without being too heavy */
+  color: #ffdd57; /* Warm golden color */
+  letter-spacing: 3px; /* Slight letter spacing for a more open look */
+  text-transform: uppercase; /* Adds sophistication */
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle text shadow for elegance */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Logo */
+header .logo:hover {
+  color: #00bfae; /* Lighter teal color on hover */
+  transform: translateY(-5px); /* Subtle lift effect */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+}
+
+/* Horizontal Navigation Styling */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Increased gap for better spacing */
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li a {
+  font-family: 'Roboto Slab', serif; /* Strong, bold typeface for buttons */
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 14px 28px; /* Spacious buttons */
+  background-color: #008C76; /* Base color for buttons */
+  border-radius: 8px;
+  transition: all 0.3s ease; /* Smooth hover effect */
+  text-transform: uppercase; /* Makes the button text more dynamic */
+}
+
+nav ul li a:hover {
+  background-color: #00bfae; /* Light teal on hover */
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Added shadow for a floating effect */
+}
+
+/* Main Content Section Styling */
+main {
+  padding: 20px 40px; /* Padding for main content */
+  background-color: #ffffff;
+}
+
+/* Feature Section Styling */
+.feature-section {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-section:hover {
+  transform: translateY(-5px); /* Subtle section hover animation */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Section Background Colors */
+#dashboard {
+  background-color: #ffebcd; /* Soft, creamy color */
+}
+
+#harvest-tracking {
+  background-color: #e0ffe0; /* Light green */
+}
+
+#data-analysis {
+  background-color: #f0f8ff; /* Soft blue */
+}
+
+#disease-detection {
+  background-color: #ffcccb; /* Light red */
+}
+
+#loan-provisioning {
+  background-color: #fdfd96; /* Light yellow */
+}
+
+/* Heading Styling */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600; /* Bold headings */
+}
+
+/* Paragraph Styling */
+p {
+  font-family: 'Roboto', sans-serif; /* Clean text font */
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Crops Carousel Styling */
+#crops-carousel {
+  margin: 40px 0; /* Adds space above and below the carousel */
+}
+
+.crops-container {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snaps to each image */
+  gap: 20px; /* Adds space between images */
+}
+
+.crop-image {
+  width: 300px; /* Set the width of the images */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures images are well-cropped */
+  border-radius: 10px; /* Rounded corners for images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for crop images */
+.crop-image:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Button Styling (For Buttons in Content Sections) */
+.button {
+  font-family: 'Roboto Slab', serif; /* Strong, bold typeface */
+  font-size: 18px;
+  padding: 12px 28px; /* Spacious buttons */
+  color: white;
+  background-color: #008C76; /* Base color for buttons */
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease; /* Smooth hover effect */
+  margin-top: 10px;
+  text-transform: uppercase; /* Makes the button text more dynamic */
+}
+
+.button:hover {
+  background-color: #00bfae; /* Light teal on hover */
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Added shadow for floating effect */
+}
+
+/* Button Variations */
+.button-primary {
+  background-color: #ffdd57; /* Golden color for primary buttons */
+}
+
+.button-primary:hover {
+  background-color: #ffbf00; /* Slightly darker yellow for hover effect */
+}
+
+.button-secondary {
+  background-color: #00bfae; /* Teal color for secondary buttons */
+}
+
+.button-secondary:hover {
+  background-color: #008C76; /* Darker teal on hover */
+}
+
+/* Cool Grey Button */
+.feature-button {
+    background-color: #6c757d; /* Grey background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Balanced padding */
+    font-size: 16px; /* Standard font size */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect */
+  .feature-button:hover {
+    background-color: #5a6368; /* Darker grey on hover */
+  }
+  
+  /* Focus effect */
+  .feature-button:focus {
+    outline: none; /* Remove default outline */
+  }
+
+/* Position profile picture in the top-right corner */
+header {
+    position: relative; /* Ensures that the profile link is positioned relative to the header */
+}
+
+.profile-link {
+    position: absolute;
+    top: 15px; /* Adjust the top position */
+    right: 15px; /* Adjust the right position */
+    display: inline-block;
+    width: 130px; /* Set the size of the profile picture */
+    height: 130px;
+}
+
+.profile-img {
+    width: 100%; /* Makes the image fit within the container */
+    height: 100%;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+  }
+  
+  .profile-link:hover .profile-img {
+    opacity: 0.8; /* Optional: Slightly fade the image on hover for effect */
+  }
